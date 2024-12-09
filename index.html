@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blue Planet Solutions - Business Consulting Firm</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brands" href="#"><img src="/public/images/logo-1.png"/> Blue Planet Solutions Inc.</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/articles/html/about-us.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#clients">Clients</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/articles/html/careers.html">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-carousel">
+      <div
+        class="carousel-slide"
+        style="background-image: url('./public/images/image-1.jpg')"
+      >
+        <div class="carousel-overlay">
+          <div class="carousel-content">
+            <h1>Empowering Businesses with AI-driven Insights</h1>
+            <p>
+              Transform your operations with cutting-edge AI solutions, from
+              predictive analytics to conversational AI. Drive innovation and
+              stay ahead in today's fast-paced digital landscape.
+            </p>
+            <div class="cta-buttons">
+              <a href="#contact" class="cta-button cta-primary"
+                >Explore AI Solutions</a
+              >
+              <a href="#services" class="cta-button cta-secondary"
+                >Get Started</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="carousel-slide"
+        style="background-image: url('./public/images/image-3.jpg')"
+      >
+        <div class="carousel-overlay">
+          <div class="carousel-content">
+            <h1>Innovative IT & Cloud Solutions</h1>
+            <p>
+              Seamlessly scale your business with secure, flexible, and
+              cloud-optimized data management. Let us guide you through every
+              stage of your IT journey.
+            </p>
+            <div class="cta-buttons">
+              <a href="#about" class="cta-button cta-primary"
+                >Learn About IT Services</a
+              >
+              <a href="#clients" class="cta-button cta-secondary"
+                >Consult with Experts</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="carousel-slide"
+        style="background-image: url('./public/images/image-4.jpg')"
+      >
+        <div class="carousel-overlay">
+          <div class="carousel-content">
+            <h1>Innovating in the Healthcare Sector</h1>
+            <p>
+              We proudly contribute to transformative healthcare initiatives
+              like <b>Pan Health</b>. Our team collaborates with IT specialists,
+              healthcare professionals, and scientists to design innovative,
+              cost-effective systems that revolutionize patient care.
+            </p>
+            <div class="cta-buttons">
+              <a href="#about" class="cta-button cta-primary"
+                >Learn About Our Healthcare Work</a
+              >
+              <a href="#clients" class="cta-button cta-secondary"
+                >Get in Touch</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="carousel-slide"
+        style="background-image: url('./public/images/image-2.jpg')"
+      >
+        <div class="carousel-overlay">
+          <div class="carousel-content">
+            <h1>Driving Digital Strategy for Sustainable Growth</h1>
+            <p>
+              Leverage our expertise in AI, IT, and business consulting to
+              design strategies that fuel efficiency and maximize returns across
+              industries.
+            </p>
+            <div class="cta-buttons">
+              <a href="#services" class="cta-button cta-primary"
+                >Learn More</a
+              >
+              <a href="#contact" class="cta-button cta-secondary"
+                >Our Success Stories</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-nav">
+        <div class="carousel-dot"></div>
+        <div class="carousel-dot"></div>
+        <div class="carousel-dot"></div>
+        <div class="carousel-dot"></div>
+      </div>
+    </section>
+    <!-- Products & Solutions -->
+    <section id="products" class="products-section">
+      <div class="product-container">
+        <div class="products-section-header">
+          <h2>Our Products & Solutions</h2>
+          <p>
+            Innovative solutions designed to revolutionize industries and drive
+            excellence.
+          </p>
+        </div>
+        <div class="products-cards-container">
+          <!-- CJN Product Card -->
+          <div class="new-product-item">
+            <div class="new-product-image-wrapper">
+              <img
+                src="/public/images/cjn.png"
+                alt="CJN Platform"
+                class="new-product-img"
+              />
+            </div>
+            <div class="new-product-description">
+              <h3>Continuous Job Network (CJN): 24x7 Channel for Jobs</h3>
+              <p>
+                A 24x7 platform dedicated to jobs, employability, and career
+                development. CJN connects job seekers, employers, and
+                professionals seamlessly.
+              </p>
+              <a
+                href="/articles/html/cjn-details.html"
+                class="new-product-btn primary-btn"
+                >Learn More About CJN</a
+              >
+            </div>
+          </div>
+
+          <!-- Smart Cookie Product Card -->
+          <div class="new-product-item">
+            <div class="new-product-image-wrapper">
+              <img
+                src="/public/images/smart-cookie.png"
+                alt="Smart Cookie Rewards"
+                class="new-product-img"
+              />
+            </div>
+            <div class="new-product-description">
+              <h3>Smart Cookie: Teacher Student Reward Platform</h3>
+              <p>
+                A dynamic reward platform for teachers and students fostering
+                engagement and recognition, motivating excellence in academics
+                and beyond.
+              </p>
+              <a
+                href="/articles/html/smart-cookie-details.html"
+                class="new-product-btn primary-btn"
+                >Learn More About Smart Cookie</a
+              >
+            </div>
+          </div>
+
+          <!-- PanHealth Product Card -->
+          <div class="new-product-item">
+            <div class="new-product-image-wrapper">
+              <img
+                src="/public/images/pan-health.png"
+                alt="PanHealth"
+                class="new-product-img"
+              />
+            </div>
+            <div class="new-product-description">
+              <h3>PanHealth: Transforming Healthcare</h3>
+              <p>
+                PanHealth is a collaborative effort between IT specialists,
+                healthcare professionals, and scientists to create
+                cost-effective healthcare solutions.
+              </p>
+              <a href="#contact" class="new-product-btn primary-btn"
+                >Learn More About PanHealth</a
+              >
+            </div>
+          </div>
+
+          <!-- ETHICAL HR Product Card -->
+          <div class="new-product-item">
+            <div class="new-product-image-wrapper">
+              <img
+                src="/public/images/ethicalhr.png"
+                alt="Ethical HR"
+                class="new-product-img"
+              />
+            </div>
+            <div class="new-product-description">
+              <h3>ETHICAL HR: Ethical Recruitment Redefined</h3>
+              <p>
+                A platform where students pledge ethics, earn a score, and gain
+                recruitment preference based on their ethical commitment.
+              </p>
+              <a
+                href="http://ethicalhr.org/"
+                target="_blank"
+                class="new-product-btn primary-btn"
+              >
+                Learn More About Ethical HR
+              </a>
+            </div>
+          </div>
+          <!-- LEARNING PLANET Product Card -->
+          <div class="new-product-item">
+            <div class="new-product-image-wrapper">
+              <img
+                src="/public/images/learningplanet.jpg"
+                alt="Learning Planet"
+                class="new-product-img"
+              />
+            </div>
+            <div class="new-product-description">
+              <h3>LEARNING PLANET: Online Education for All</h3>
+              <p>
+                A portal for faculty to offer self-paced courses, track
+                attendance, and issue certificates and rewards, enhancing
+                flexible learning.
+              </p>
+              <a
+                href="https://learningplanet.in/"
+                target="_blank"
+                class="new-product-btn primary-btn"
+              >
+                Learn More About Learning Planet
+              </a>
+            </div>
+          </div>
+          <!-- REWARDING NATION Product Card -->
+          <div class="new-product-item">
+            <div class="new-product-image-wrapper">
+              <img
+                src="/public/images/rewardingnation.png"
+                alt="Rewarding Nation"
+                class="new-product-img"
+              />
+            </div>
+            <div class="new-product-description">
+              <h3>REWARDING NATION: Empowering Achievement</h3>
+              <p>
+                An e-commerce platform where students and teachers redeem points
+                earned on the Smart Cookie platform, celebrating their
+                achievements.
+              </p>
+              <a
+                href="https://rewardingnation.com/"
+                target="_blank"
+                class="new-product-btn primary-btn"
+              >
+                Learn More About Rewarding Nation
+              </a>
+            </div>
+          </div>
+          <!-- STARTUP WORLD & PROJECT SHOWCASE Product Card -->
+          <div class="new-product-item">
+            <div class="new-product-image-wrapper">
+              <img
+                src="/public/images/startupworld.png"
+                alt="Startup World & Project Showcase"
+                class="new-product-img"
+              />
+            </div>
+            <div class="new-product-description">
+              <h3>
+                STARTUP WORLD: Bridging Education & Industry
+              </h3>
+              <p>
+                A platform connecting students to live projects and industry
+                experts, offering real-world exposure and feedback for personal
+                and professional growth.
+              </p>
+              <a
+                href="http://startupworld.in/"
+                target="_blank"
+                class="new-product-btn primary-btn"
+              >
+                Learn More About Startup World
+              </a>
+            </div>
+          </div>
+
+          <!-- Campus Radio and TV Product Card -->
+          <div class="new-product-item">
+            <div class="new-product-image-wrapper">
+              <img
+                src="/public/images/campus-radio.jpg"
+                alt="Campus Radio and TV"
+                class="new-product-img"
+              />
+            </div>
+            <div class="new-product-description">
+              <h3>Campus Radio and TV: Stay Updated</h3>
+              <p>
+                Campus Radio and TV keep students informed about college news
+                and events, ensuring you never miss important updates.
+              </p>
+              <a href="https://campusradio.rocks/" class="new-product-btn primary-btn"
+                >Learn More About Campus Radio</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <!-- <section id="services" class="section services">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Core Services</h2>
+          <p>Comprehensive solutions tailored to your business needs</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <i class="fas fa-chart-line"></i>
+            <h3>Business Strategy</h3>
+            <p>
+              Develop robust strategies that align with your business goals and
+              market dynamics.
+            </p>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-dollar-sign"></i>
+            <h3>Financial Consulting</h3>
+            <p>
+              Optimize financial performance, manage risks, and drive
+              sustainable growth.
+            </p>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-digital-tachograph"></i>
+            <h3>Digital Transformation</h3>
+            <p>
+              Leverage cutting-edge technologies to revolutionize your business
+              processes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section id="services" class="services-section">
+      <div class="services-header">
+        <h2 id="service-header">Our Services</h2>
+      </div>
+      <div class="services-container">
+        <!-- Generative AI Card -->
+        <div class="service-card">
+          <div class="service-image">
+            <img
+              src="/public/images/generative_ai.jpg"
+              alt="Generative AI Solutions"
+            />
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Generative AI Solutions</h3>
+            <p class="service-description">
+              Leverage generative AI to transform your business with open-source
+              platforms like OpenAI, Ollama, and more.
+            </p>
+            <ul class="service-details">
+              <li>
+                Open-source AI tools integration (OpenAI, Ollama, Hugging Face)
+              </li>
+              <li>AI-driven data analysis and insights</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Managed Services Card -->
+        <div class="service-card">
+          <div class="service-image">
+            <img
+              src="/public/images/manged-services.jpg"
+              alt="Managed Services"
+            />
+          </div>
+          <div class="service-content">
+            <h3 class="service-title"><a href="/articles/html/managed-services.html">Managed Services  <img style="width: 25px; height: 25px;" src="/public/images/external-link.svg"/></a></h3> 
+            <p class="service-description">
+              Tailored support solutions for your business needs, ensuring
+              smooth operations.
+            </p>
+            <ul class="service-details">
+              <li>Cloud & Network Support</li>
+              <li>Data Center Management</li>
+              <li>Healthcare Solutions</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Recruitment Support Services Card -->
+        <div class="service-card">
+          <div class="service-image">
+            <img
+              src="/public/images/recruiment-services.jpg"
+              alt="Recruitment Support"
+            />
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">
+              <a href="/articles/html/recruitment-support.html"
+                >Recruitment Support  <img style="width: 25px; height: 25px;" src="/public/images/external-link.svg"/></a
+              >
+            </h3>
+            <p class="service-description">
+              Streamlined recruitment solutions to help you find top talent
+              faster.
+            </p>
+            <ul class="service-details">
+              <li>Resume Screening</li>
+              <li>Candidate Communication</li>
+              <li>VMS Support</li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-image">
+            <img
+              src="/public/images/software-development-services.jpg"
+              alt="Software Development"
+            />
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">
+              <a href="/articles/html/software-dev-capabilities.html"
+                >Software Development  <img style="width: 25px; height: 25px;" src="/public/images/external-link.svg"/></a
+              >
+            </h3>
+            <p class="service-description">
+              Delivering innovative solutions through custom software, web, and
+              mobile development.
+            </p>
+            <ul class="service-details">
+              <li>Custom Software Development</li>
+              <li>Web Application Development</li>
+              <li>Mobile App Development</li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-image">
+            <img
+              src="/public/images/back-office.jpg"
+              alt="Call Center & Back Office"
+            />
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Call Center & Back Office</h3>
+            <p class="service-description">
+              Providing comprehensive solutions for customer and technical
+              support, as well as administrative tasks.
+            </p>
+            <ul class="service-details">
+              <li>Customer Support</li>
+              <li>Technical Support</li>
+              <li>Data Entry</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our team -->
+    <section class="team-section">
+      <h2>Our Team</h2>
+      <div class="team-container">
+        <!-- Team Member 1 -->
+        <div class="team-member">
+          <img
+            src="https://smartcookie.in/rkassets/img/team/avikulkarni.png"
+            alt="Team Member 1"
+          />
+          <div class="team-info">
+            <h3>Avinash Kulkarni</h3>
+            <p class="position">CEO</p>
+            <p class="contact">
+              Email:
+              <a href="avi@blueplanetsolutions.com"
+                >avi@blueplanetsolutions.com</a
+              >
+            </p>
+            <p class="contact">Phone: +1 973 551 5593</p>
+          </div>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="team-member">
+          <img
+            src="/public/images/rakesh-khatri.jpg"
+            alt="Team Member 2"
+          />
+          <div class="team-info">
+            <h3>Rakesh Khatri</h3>
+            <p class="position">CTO</p>
+            <p class="contact">
+              Email:
+              <a href="mailto:rakesh@blueplanetsolutions.com"
+                >rakesh@blueplanetsolutions.com</a
+              >
+            </p>
+            <p class="contact">Phone: +91 996 090 3132</p>
+          </div>
+        </div>
+
+        <!-- Team Member 3 -->
+        <!-- <div class="team-member">
+          <img src="team-member3.jpg" alt="Team Member 3" />
+          <div class="team-info">
+            <h3>Sam Brown</h3>
+            <p class="position">Marketing Manager</p>
+            <p class="contact">
+              Email: <a href="mailto:sam@example.com">sam@example.com</a>
+            </p>
+            <p class="contact">Phone: +1-234-567-892</p>
+          </div>
+        </div> -->
+      </div>
+      <!-- Our Workforce Button -->
+      <div class="workforce-section">
+        <p class="workforce-text">
+          Want to learn more about our workforce? Check out the detailed list.
+        </p>
+        <a href="/articles/html/work-force.html" class="workforce-btn"
+          >View Our Workforce</a
+        >
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <!-- <section id="clients" class="section testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2>What Our Clients Say</h2>
+        </div>
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <p>
+              "Apex Strategic Solutions transformed our business strategy and
+              helped us achieve unprecedented growth."
+            </p>
+            <p><strong>- Sarah Johnson</strong><br />CEO, TechInnovate Inc.</p>
+          </div>
+          <div class="testimonial-card">
+            <p>
+              "Their digital transformation consulting was game-changing for our
+              organization's efficiency."
+            </p>
+            <p>
+              <strong>- Michael Chen</strong><br />COO, GlobalRetail Solutions
+            </p>
+          </div>
+          <div class="testimonial-card">
+            <p>
+              "Incredible financial insights that helped us optimize our
+              business model."
+            </p>
+            <p>
+              <strong>- Emily Rodriguez</strong><br />Founder, HealthTech
+              Ventures
+            </p>
+          </div>
+        </div>
+
+        <div class="client-logos" style="margin-top: 50px">
+          <img src="./public/images/client_logo_1.png" alt="Client Logo 1" />
+          <img src="./public/images/client_logo_2.png" alt="Client Logo 2" />
+          <img src="./public/images/client_logo_3.png" alt="Client Logo 3" />
+          <img src="./public/images/client_logo_4.png" alt="Client Logo 4" />
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="section" style="background-color: white">
+      <div class="container">
+        <div class="section-header">
+          <h2>Contact Us</h2>
+          <p>Ready to transform your business? Let's talk.</p>
+        </div>
+        <div style="max-width: 600px; margin: 0 auto">
+          <form id="contactForm">
+            <input
+              type="text"
+              placeholder="Your Name"
+              required
+              style="width: 100%; padding: 10px; margin-bottom: 15px"
+            />
+            <input
+              type="email"
+              placeholder="Your Email"
+              required
+              style="width: 100%; padding: 10px; margin-bottom: 15px"
+            />
+            <input
+              type="tel"
+              placeholder="Your Phone Number"
+              style="width: 100%; padding: 10px; margin-bottom: 15px"
+            />
+            <textarea
+              placeholder="Your Message"
+              required
+              style="
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                height: 150px;
+              "
+            ></textarea>
+            <button
+              type="submit"
+              class="cta-contact-button"
+              style="width: 100%; padding: 12px"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <div class="location-container">
+      <h1>Our Location</h1>
+      <p>Blue Planet Solutions Inc., 297 Walnut Street, Livingston, NJ 07039</p>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3052.4814530196043!2d-74.31911128460138!3d40.78899697932396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3a2bb4dfac6d1%3A0x28b6188b541c0f6b!2s297%20Walnut%20St%2C%20Livingston%2C%20NJ%2007039%2C%20USA!5e0!3m2!1sen!2sin!4v1702059623458!5m2!1sen!2sin"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      <a href="https://www.google.com/maps/place/297+Walnut+St,+Livingston,+NJ+07039,+USA" target="_blank" class="btn">
+        Get Directions
+      </a>
+    </div>
+    
+
+    <!-- Footer -->
+    <footer>
+      <div class="container footer-grid">
+        <div class="footer-column">
+          <h4>About Blue Planet Solutions</h4>
+          <p>
+            Blue Planet Solutions drives business growth with innovative IT and
+            consulting, specializing in healthcare, IT, and digital
+            transformation.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#clients">Clients</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>Services</h4>
+          <div class="footer-links">
+            <a href="#">Business Strategy</a>
+            <a href="#">Financial Consulting</a>
+            <a href="#">Digital Transformation</a>
+            <a href="#">HR Consulting</a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>Contact Info</h4>
+          <p>Blue Planet Solutions Inc.<br />297 Walnut Street, Livingston, NJ 07039.</p>
+
+          <p>
+            Phone: +1-973-568-0605<br />Email:
+            <a href="mailto:avi@blueplanetsolutions.com"
+              >avi@blueplanetsolutions.com</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Adding gsap script tags -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

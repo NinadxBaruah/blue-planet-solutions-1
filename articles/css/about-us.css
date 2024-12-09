@@ -1,0 +1,344 @@
+:root {
+    --primary-color: #1a5f7a;
+    --secondary-color: #159895;
+    --accent-color: #57c5b6;
+    --text-color: #333;
+    --light-bg: #f4f9f9;
+    --brand-primary-blue: #4a90e2;
+    --brand-accent-purple: #5f27cd;
+    --typography-dark-slate: #2c3e50;
+    --typography-soft-gray: #7f8c8d;
+    --background-pale-gray: #f4f6f7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: white;
+}
+.navbar-brands{
+    color: rgb(3, 3, 109);
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+.navbar-brands img{
+    width: 3.5rem;
+}
+@media screen and (max-width: 415px) {
+
+    .navbar-brands img{
+        width: 2rem;
+        
+    }
+    .navbar-brands{
+        color: rgb(3, 3, 109);
+        font-weight: 700;
+        font-size: 1rem;
+        text-decoration: none;
+    }
+
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background: linear-gradient(to bottom right, #2563eb, #14b8a6);
+    color: white;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+/* Company Overview */
+.company-overview {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 4rem 0;
+}
+
+.company-overview-content {
+    flex: 1;
+}
+
+.company-overview-content h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid var(--accent-color);
+}
+
+.company-overview-content p {
+    font-size: 1.125rem;
+    color: #4a5568;
+    margin-bottom: 1rem;
+}
+
+.stats {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.company-overview-image {
+    flex: 1;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+.company-overview-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Vision & Mission */
+.vision-mission {
+    background-color: #f7fafc;
+    padding: 4rem 0;
+}
+
+.vision-mission-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.vision-card, .mission-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.vision-card:hover, .mission-card:hover {
+    transform: translateY(-10px);
+}
+
+.vision-card h3, .mission-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+/* What Sets Us Apart */
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 4rem 0;
+}
+
+.feature-card {
+    background-color: white;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.feature-card h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+}
+
+/* Corporate Social Responsibility */
+.csr {
+    background-color: #f7fafc;
+    padding: 4rem 0;
+}
+
+.csr-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.csr-text p {
+    font-size: 1.125rem;
+    color: #4a5568;
+    margin-bottom: 1.5rem;
+}
+
+.csr-list {
+    list-style-type: none;
+}
+
+.csr-list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    color: #4a5568;
+}
+
+.csr-list-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #48bb78;
+    margin-right: 0.75rem;
+}
+
+.csr-image {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+.csr-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Call to Action */
+.cta {
+    background: linear-gradient(to bottom right, #2563eb, #14b8a6);
+    color: white;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.cta p {
+    font-size: 1.25rem;
+    max-width: 36rem;
+    margin: 0 auto 2rem;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    border-radius: 9999px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: white;
+    color: #2563eb;
+}
+
+.btn-secondary {
+    border: 2px solid white;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .company-overview,
+    .vision-mission-content,
+    .features,
+    .csr-content {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+
+  /* Footer */
+  
+  footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 50px 0;
+  }
+  
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 30px;
+  }
+  
+  .footer-column h4 {
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: var(--secondary-color);
+  }
+  
+  @media (max-width: 768px) {
+    .footer-grid {
+      grid-template-columns: 1fr;
+    }
+  }
